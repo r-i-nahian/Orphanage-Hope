@@ -5,4 +5,6 @@
 1. Create a database in your phpMyAdmin called "database"
 2. Import "database.sql" file in your database
 
-# For live demo visit(http://nahian.me/orphanage-hope)
+# Live demo 
+
+visit(http://nahian.me/orphanage-hope)
