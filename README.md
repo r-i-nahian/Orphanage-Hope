@@ -1,4 +1,4 @@
-# Orphanage-Hope
+# Orphans-Hope
 
 # How to run this Project :
 
