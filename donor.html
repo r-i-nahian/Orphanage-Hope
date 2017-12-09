@@ -31,7 +31,7 @@
                 <div class="clr"></div>
                 <div class="hbg"><img src="images/header_images.jpg" width="670" height="298" alt="" class="fl" />
                     <div class="info fl">
-                        <h4>Welcome to </h4> 
+                        <h4>Welcome to </h4>
                         <h4>Orphans Hope</h4>
                     </div>
                     <div class="clr"></div>
@@ -43,86 +43,53 @@
 
                     <div class="article">
 
-                        <h2><span>Register</span> </h2>
+
+                        <h4 style="color:#97c950;">Welcome Donor</h4>
                         <br>
+                        <h2>Will you pay a donation ? </h2>
+                        <br><br>
+                        <form action="donate.php" method="post">
 
-                        <form action="" method="post" id="signup">
 
-                            <fieldset>
-                                <legend>
-                                    <h2>Are You A ?</h2>
-                                </legend>
-                                <input type="radio" name="regtypes" value="Eager Parents">Eager Parents <br/>
-                                <input type="radio" name="regtypes" value="Orphanage">Orphanage <br/>
-                                <input type="radio" name="regtypes" value="Doner">Doner <br/>
-                            </fieldset>
-                            <br>
+
 
                             <table>
                                 <tr>
                                     <td>
-                                        <h2> First Name</h2>
+                                        <h2> Your Donation Type :</h2>
                                     </td>
-                                    <td><input type="text" name="first_name"></td>
+                                    <td><input type="text" name="type"></td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <h2> Last Name</h2>
-                                    </td>
-                                    <td><input type="text" name="last_name"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h2> NID Number</h2>
-                                    </td>
-                                    <td><input type="text" name="nid"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h2> Mobile Number (If Available)</h2>
-                                    </td>
-                                    <td><input type="text" name="mobile"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h2> Home Number (If Available)</h2>
-                                    </td>
-                                    <td><input type="text" name="home"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h2> Office Number (If Available)</h2>
-                                    </td>
-                                    <td><input type="text" name="office"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h2> Address (If Available)</h2>
-                                    </td>
-                                    <td><input type="text" name="address"></td>
-                                </tr>
+
 
                                 <tr>
                                     <td>
-                                        <h2> Email</h2>
+                                        <h2> Credit card holder name :</h2>
                                     </td>
-                                    <td><input type="textarea" name="email"></td>
+                                    <td><input type="text" name="ccname"></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h2> Password</h2>
+                                        <h2> Credit card number :</h2>
                                     </td>
-                                    <td><input type="password" name="address"></td>
+                                    <td><input type="text" name="ccno"></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h2> Confirm Password</h2>
+                                        <h2> Expire Date</h2>
                                     </td>
-                                    <td><input type="password" name="address"></td>
+                                    <td><input type="text" name="date"></td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <h2> CVV no :</h2>
+                                    </td>
+                                    <td><input type="text" name="cvv"></td>
+                                </tr>
+
                             </table>
 
-                            <button type="submit" form="signup" value="Register" class="ui-btn ui-shadow">Register</button>
+                            <button type="submit" class="ui-btn ui-shadow">Donate</button>
 
                         </form>
 
