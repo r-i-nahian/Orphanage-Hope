@@ -1,6 +1,6 @@
 <?php
-$connection = mysql_connect('localhost', 'nahian_u1', 'admin123'); 
-mysql_select_db('nahian_test1');
+$connection = mysql_connect('localhost', 'root', ''); 
+mysql_select_db('database');
 ?>
 
 
@@ -22,19 +22,7 @@ mysql_select_db('nahian_test1');
             <div class="main">
                 <div class="header">
 
-                    <div class="menu_nav">
-                        <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="orphanage.html">Orphanages</a></li>
-                            <li><a href="verification.html">Verification Authority</a></li>
-                            <li><a href="adoption.html">Adoption</a></li>
-                            <li><a href="donor.html">Donate Money</a></li>
-                            <li><a href="register.html">Register</a></li>
-                            <li><a href="login.html">Log In</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
+                    
                     <div class="clr"></div>
                     <div class="hbg"><img src="images/header_images.jpg" width="670" height="298" alt="" class="fl" />
                         <div class="info fl">
