@@ -33,8 +33,8 @@
                         <h2><span>Welcome to your Dashboard</span> </h2>
 
                      
-                        <a href="../donate_data.php"><button  class="ui-btn ui-shadow">Donation from Donor</button></a>
-                        <a href="../adoption_data.php"><button  class="ui-btn ui-shadow">Adoption Form</button></a>
+                        <a href="../donate_data.php"><button  class="ui-btn ui-shadow">Donation From Donor</button></a>
+                        <a href="../adoption_data.php"><button  class="ui-btn ui-shadow">Adoption Form's Response</button></a>
                         
                         <br>
                         <br>
