@@ -23,10 +23,15 @@ $manager_name = mysqli_real_escape_string($link, $_REQUEST['manager_name']);
 $sql = "INSERT INTO adoption (fathers_name, mothers_name, fathers_nid, mothers_nid, mobile, address, email, orphanages_name, orphanages_id,manager_name) VALUES ('$fathers_name', '$mothers_name', '$fathers_nid', '$mothers_nid', '$mobile','$address', '$email', '$orphanages_name', '$orphanages_id', '$manager_name' )";
 if(mysqli_query($link, $sql)){
     echo "Records added successfully.";
+    
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
- 
+
 // close connection
 mysqli_close($link);
 ?>
+<html>
+    <br/><a href="donate.php">Another Donation<a>
+    <br/><a href="index.html">Go to homepage<a>
+</html>

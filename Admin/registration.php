@@ -30,7 +30,7 @@
 <div class="form">
 <h1>Registration</h1>
 <form name="registration" action="" method="post">
-<input type="text" name="username" placeholder="Fullname" required />
+<input type="text" name="username" placeholder="Orphanage Name" required />
 <input type="email" name="email" placeholder="Email" required />
 <input type="password" name="password" placeholder="Password" required />
 <input type="submit" name="submit" value="Register" />

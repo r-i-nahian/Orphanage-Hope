@@ -26,3 +26,7 @@ if(mysqli_query($link, $sql)){
 // close connection
 mysqli_close($link);
 ?>
+<html>
+    <br/><a href="donate.php">Another Donation<a>
+    <br/><a href="index.html">Go to homepage<a>
+</html>
