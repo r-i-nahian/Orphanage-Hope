@@ -1,3 +1,0 @@
-[08-Dec-2017 20:35:46 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/nahian/public_html/test/Admin/db.php:13) in /home/nahian/public_html/test/Admin/login.php on line 3
-[08-Dec-2017 20:36:01 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/nahian/public_html/test/Admin/db.php:13) in /home/nahian/public_html/test/Admin/login.php on line 3
-[08-Dec-2017 20:36:01 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/nahian/public_html/test/Admin/db.php:13) in /home/nahian/public_html/test/Admin/login.php on line 18

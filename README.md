@@ -7,4 +7,4 @@
 
 # Live demo 
 
-visit(http://nahian.me/orphanage-hope)
+http://nahian.me/orphanage-hope

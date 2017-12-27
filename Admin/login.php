@@ -36,7 +36,7 @@ ob_end_flush();
 <div class="form">
 <h1>Log In</h1>
 <form action="" method="post" name="login">
-<input type="text" name="username" placeholder="Username" required />
+<input type="text" name="username" placeholder="Fullname" required />
 <input type="password" name="password" placeholder="Password" required />
 <input name="submit" type="submit" value="Login" />
 </form>
