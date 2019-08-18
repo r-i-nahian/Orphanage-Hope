@@ -16,23 +16,23 @@
             <div class="header">
 
                 <div class="menu_nav">
-                   <ul>
+                    <ul>
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="orphanage.html">Orphanages</a></li>
                         <li><a href="verification.html">Verification Authority</a></li>
                         <li><a href="adoption.html">Adoption</a></li>
                         <li><a href="donor.html">Donate Money</a></li>
-                        <li><a href="Admin/registration.php">Register</a></li>
-                        <li><a href="Admin/login.php">Log In</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Log In</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="clr"></div>
                 <div class="hbg"><img src="images/header_images.jpg" width="670" height="298" alt="" class="fl" />
                     <div class="info fl">
-                        <h4>Welcome to </h4>
-                         <h4>Orphans Hope</h4>
+                        <h4>Welcome to </h4> 
+                        <h4>Orphans Hope</h4>
                     </div>
                     <div class="clr"></div>
                 </div>
@@ -43,90 +43,86 @@
 
                     <div class="article">
 
-                        <h2><span>Adoption Form</span> </h2>
+                        <h2><span>Register</span> </h2>
                         <br>
 
-                        <form action="adoption.php" method="post">
+                        <form action="" method="post" id="signup">
 
+                            <fieldset>
+                                <legend>
+                                    <h2>Are You A ?</h2>
+                                </legend>
+                                <input type="radio" name="regtypes" value="Eager Parents">Eager Parents <br/>
+                                <input type="radio" name="regtypes" value="Orphanage">Orphanage <br/>
+                                <input type="radio" name="regtypes" value="Doner">Doner <br/>
+                            </fieldset>
+                            <br>
 
-
-                            <table width="100%">
-                                <center>
-                                    <h2>Parents Details</h2>
-                                </center><br>
+                            <table>
                                 <tr>
                                     <td>
-                                        <h2> Father's Name</h2>
+                                        <h2> First Name</h2>
                                     </td>
-                                    <td><input type="text" name="fathers_name"></td>
+                                    <td><input type="text" name="first_name"></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h2> Mother's Name</h2>
+                                        <h2> Last Name</h2>
                                     </td>
-                                    <td><input type="text" name="mothers_name"></td>
+                                    <td><input type="text" name="last_name"></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h2> Father's NID Number</h2>
+                                        <h2> NID Number</h2>
                                     </td>
-                                    <td><input type="text" name="fathers_nid"></td>
+                                    <td><input type="text" name="nid"></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h2> Mother's NID Number</h2>
-                                    </td>
-                                    <td><input type="text" name="mothers_nid"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h2> Mobile Number </h2>
+                                        <h2> Mobile Number (If Available)</h2>
                                     </td>
                                     <td><input type="text" name="mobile"></td>
                                 </tr>
-                                
                                 <tr>
                                     <td>
-                                        <h2> Address </h2>
+                                        <h2> Home Number (If Available)</h2>
                                     </td>
-                                    <td><input type="textarea" name="address"></td>
+                                    <td><input type="text" name="home"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2> Office Number (If Available)</h2>
+                                    </td>
+                                    <td><input type="text" name="office"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2> Address (If Available)</h2>
+                                    </td>
+                                    <td><input type="text" name="address"></td>
                                 </tr>
 
                                 <tr>
                                     <td>
                                         <h2> Email</h2>
                                     </td>
-                                    <td><input type="text" name="email"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <center>
-                                            <h2>Interested Orphanage's Details</h2>
-                                        </center><br></td>
+                                    <td><input type="textarea" name="email"></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h2> Orphanage's name </h2>
+                                        <h2> Password</h2>
                                     </td>
-                                    <td><input type="text" name="orphanages_name"></td>
+                                    <td><input type="password" name="address"></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h2> Orphanage's Id </h2>
+                                        <h2> Confirm Password</h2>
                                     </td>
-                                    <td><input type="textarea" name="orphanages_id"></td>
+                                    <td><input type="password" name="address"></td>
                                 </tr>
-
-                                <tr>
-                                    <td>
-                                        <h2> Manager's Name</h2>
-                                    </td>
-                                    <td><input type="text" name="manager_name"></td>
-                                </tr>
-
                             </table>
 
-                            <button type="submit" value="submit" class="ui-btn ui-shadow">Submit</button>
+                            <button type="submit" form="signup" value="Register" class="ui-btn ui-shadow">Register</button>
 
                         </form>
 
@@ -140,12 +136,12 @@
                         <h2 class="star"><span>Our</span> Achievments</h2>
                         <div class="clr"></div>
                         <ul class="sb_menu">
-                            <li> 1st in Apicta Award</li>
-                            <li> 2nd in Smart Citizen Award</li>
-                            <li> 4th in Startup Award</li>
-                            <li> 5th in Statup Expo</li>
-                            <li> Top 100 Startup in Asia</li>
-                            <li> Top 100 Startup in South Asia</li>
+                            <li> Lorem ipsum dolor sit amet.</li>
+                            <li> Lorem ipsum dolor sit amet.</li>
+                            <li> Lorem ipsum dolor sit amet.</li>
+                            <li> Lorem ipsum dolor sit amet.</li>
+                            <li> Lorem ipsum dolor sit amet.</li>
+                            <li> Lorem ipsum dolor sit amet.</li>
 
                         </ul>
                     </div>
@@ -153,12 +149,12 @@
                         <h2 class="star"><span>Top Doner</span></h2>
                         <div class="clr"></div>
                         <ul class="ex_menu">
-                            <li> Amit Islam</li>
-                            <li> Rajib Huq</li>
-                            <li> Islam Tanvir</li>
-                            <li> Salman Khan</li>
-                            <li> Nir Huq</li>
-                            <li> Polash Khan</li>
+                            <li> Lorem ipsum dolor sit amet.</li>
+                            <li> Lorem ipsum dolor sit amet.</li>
+                            <li> Lorem ipsum dolor sit amet.</li>
+                            <li> Lorem ipsum dolor sit amet.</li>
+                            <li> Lorem ipsum dolor sit amet.</li>
+                            <li> Lorem ipsum dolor sit amet.</li>
                         </ul>
                     </div>
                 </div>
@@ -174,12 +170,12 @@
 
                     </div>
                     <div class="col c2">
-                        <h2><span>Mission & Vision</span></h2>
-                        <p>The mission to connect people is what makes this statement so strong. And that promise has gone beyond sweetgreen's website and walls of its food shops: The team has made strides in the communities where it's opened stores as well. Primarily, it provides education to young kids on healthy eating,</p>
+                        <h2><span>Latest News</span></h2>
+                        <p>Lorem ipsum dolor<br /> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. <a href="#">Morbi tincidunt, orci ac convallis aliquam</a>, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam.</p>
                     </div>
                     <div class="col c3">
                         <h2><span>About</span></h2>
-                        <p> It is a local program in existence for more than 60 years. More than 700 newspapers have NIE programs. NIE puts newspapers in classrooms as a topical, relevant curriculum supplement. To particpate in NIE, teachers set up a classroom subscription, usually a newspaper for each student in the classroom one day a week. Teachers then use the newspapers in activities that enhance the lessons and skills they teach.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. llorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum. <a href="#">Learn more...</a></p>
                     </div>
                     <div class="clr"></div>
                 </div>

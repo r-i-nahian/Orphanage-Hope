@@ -1,6 +1,5 @@
 <?php
-$connection = mysql_connect('localhost', 'root', ''); 
-mysql_select_db('database');
+$connection = mysqli_connect("localhost", "root", "root", "database");
 ?>
 
 
@@ -43,7 +42,7 @@ mysql_select_db('database');
                         <br>
                         <?php              
                         $query = "SELECT * FROM adoption"; 
-                        $result = mysql_query($query);
+                        $result = mysqli_query($connection,$query);
                         ?>
                         <table class="table table-hover">
                             <tr>
@@ -59,13 +58,13 @@ mysql_select_db('database');
                                 <td>Manager Name</td>
                             </tr>
                             <?php
-                        while($row = mysql_fetch_array($result)){   
+                        while($row = mysqli_fetch_array($result)){   
                         echo "<tr><td>" . $row['fathers_name'] . "</td><td>" . $row['mothers_name'] . "</td><td>". $row['fathers_nid'] ."</td><td>". $row['mothers_nid'] ."</td><td>". $row['mobile'] ." </td><td>". $row['address'] . "</td><td>". $row['email'] . "</td><td>". $row['orphanages_name'] . "</td><td>". $row['orphanages_id'] . "</td><td>". $row['manager_name'] . "</td></tr>";  
                         }
 
                         echo "</table>"; 
 
-                        mysql_close(); 
+                        mysqli_close($connection); 
 
                         ?>
 

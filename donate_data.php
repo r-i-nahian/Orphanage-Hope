@@ -1,6 +1,5 @@
 <?php
-$connection = mysql_connect('localhost', 'root', ''); 
-mysql_select_db('database');
+    $connection = mysqli_connect("localhost", "root", "root", "database");
 ?>
 
     <!DOCTYPE html>
@@ -42,7 +41,7 @@ mysql_select_db('database');
                         <br>
                         <?php
                         $query = "SELECT * FROM donate"; 
-                        $result = mysql_query($query);
+                        $result = mysqli_query($connection,$query);
                         ?>
                             <table class="table table-hover">
                                 <tr>
@@ -53,13 +52,13 @@ mysql_select_db('database');
                                     <td>CVV</td>
                                 </tr>
                                 <?php
-                        while($row = mysql_fetch_array($result)){   
+                        while($row = mysqli_fetch_array($result)){   
                         echo "<tr><td>" . $row['type'] . "</td><td>" . $row['ccname'] . "</td><td>". $row['ccno'] ."</td><td>". $row['date'] ."</td><td>". $row['cvv'] ." </td></tr>";  
                         }
 
                         echo "</table>"; 
 
-                        mysql_close(); 
+                        mysqli_close($connection);  
                         ?>
 
 

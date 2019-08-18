@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 27, 2017 at 10:10 AM
+-- Generation Time: Dec 08, 2017 at 09:23 PM
 -- Server version: 5.5.51-38.2
 -- PHP Version: 5.6.30
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `nahian_test1`
+-- Database: `database`
 --
 
 -- --------------------------------------------------------
@@ -39,6 +39,13 @@ CREATE TABLE IF NOT EXISTS `adoption` (
   `manager_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `adoption`
+--
+
+
+
+
 -- --------------------------------------------------------
 
 --
@@ -53,6 +60,13 @@ CREATE TABLE IF NOT EXISTS `donate` (
   `cvv` int(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `donate`
+--
+
+
+
+
 -- --------------------------------------------------------
 
 --
@@ -65,7 +79,9 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   `trn_date` datetime NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+
 
 --
 -- Indexes for dumped tables
@@ -85,7 +101,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

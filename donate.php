@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect("localhost", "root", "", "database");
+$link = mysqli_connect("localhost", "root", "root", "database");
  
 // Check connection
 if($link === false){
@@ -26,7 +26,3 @@ if(mysqli_query($link, $sql)){
 // close connection
 mysqli_close($link);
 ?>
-<html>
-    <br/><a href="donate.php">Another Donation<a>
-    <br/><a href="index.html">Go to homepage<a>
-</html>

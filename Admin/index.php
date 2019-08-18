@@ -35,9 +35,6 @@
                      
                         <a href="../donate_data.php"><button  class="ui-btn ui-shadow">Donation From Donor</button></a>
                         <a href="../adoption_data.php"><button  class="ui-btn ui-shadow">Adoption Form's Response</button></a>
-                        <br>
-                        <a href="mailto:manager@example.com"><button  class="ui-btn ui-shadow">Mail to Manager</button></a>
-                        <a href="mailto:verification@example.com"><button  class="ui-btn ui-shadow">Mail to Verification Authority</button></a>
                         
                         <br>
                         <br>
